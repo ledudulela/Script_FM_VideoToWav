@@ -1,17 +1,25 @@
 # Script VideoToWav
 
-A partir du gestionnaire de fichier, extrait le son d'une vidéo et le convertit en wav
+Objet: A partir du gestionnaire de fichiers, extrait le son d'une vidéo et le convertit en WAV
 
-dépendances: avconv, zenity
+Dépendances: avconv, zenity
 
-Le script est à placer de préférence dans le répertoire /usr/local/bin/
+--
 
-Il peut être appelé depuis le gestionnaire de fichiers.
+Le script est à placer dans le répertoire /usr/local/bin/
 
-Par exemple pour Caja, en créant un lien symbolique vers /usr/local/bin/videotowav.sh
+Initialement prévu pour être exécuté en ligne de commandes, il peut également être appelé depuis le gestionnaire de fichiers.
+
+Par exemple pour Caja, en créant un lien symbolique vers /usr/local/bin/VideoToWav.sh
 
 dans le répertoire /home/utilisateur/.config/caja/scripts
 
 et en nommant ce lien symbolique "Extraire l'audio (wav)", il apparaitra en faisant un
  clic-droit sur une vidéo dans Caja, un sous-menu Scripts > Extraire l'audio (wav)
+
+*ln -s "/usr/local/bin/VideoToWav.sh" "$HOME/.config/caja/scripts/Extraire l'audio (wav)"*
+
+--
+
+Idem avec VideoToMp3, pour convertir en MP3
 
